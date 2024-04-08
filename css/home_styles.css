@@ -1,0 +1,86 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 2rem auto;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.main-picture {
+    margin: 1rem;
+    width: 45%;
+}
+
+
+.main-picture img {
+    width: 90%;
+    border-radius: 20px;
+}
+
+.main-description {
+    width: 45%;
+}
+
+.main-description h2 {
+    margin-bottom: 1.5rem;
+    font-size:48px;
+    font-family: "Reddit Mono";
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 20px;
+    color: #ddd;
+}
+
+.main-description p {
+    font-size: 16px;
+    text-indent: 2rem;
+    text-align: justify;
+    line-height: 1.5rem;
+    color: #aaa;
+    margin: 1rem auto .5rem;
+    
+}
+
+.main-description ul {
+    border: 1px solid #333;
+    border-radius: 20px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5rem;
+    color: #aaa;
+    margin: 1rem auto .5rem;
+    padding: 4rem 2rem;
+}
+
+.main-description li {
+    margin-bottom: .5rem;
+}
+
+/*Responsividade*/
+@media(max-width:425px) {
+    main {
+        flex-direction: column;
+    }
+    .main-picture {
+        margin: 1rem;
+        width: 80%;
+    }
+    .main-picture img {
+        width: 100%;
+        border-radius: 20px;
+    }    
+    .main-description {
+        width: 80%;
+    }
+    .main-description ul {
+        font-size: 16px;
+        padding: 2rem 1.5rem;
+    }
+
+}
+@media(max-width:320px) {
+    .main-description h2 {
+        font-size: 32px;    
+    }
+}

@@ -1,0 +1,73 @@
+.months-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.month {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.month-header {
+    color: #ddd;
+    width: 100%;
+    border-bottom: 2px solid #333;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+    padding-left: 1.5rem;
+}
+
+.review {
+    display: flex;
+    padding: 2rem;
+    gap: 2.5rem;
+}
+
+
+.review img {
+    width: 150px;
+    border-radius: 20px;
+}
+
+.review-title {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ddd;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: #aaa;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: #5781ec;
+    font-size: 28px;
+}
+
+/*Responsividade*/
+@media(max-width:425px) {
+    
+.review-title {
+    font-size: 20px;
+}
+.review-info {
+    font-size: 16px;
+}
+}
+
+@media(max-width:320px) {
+    .review img {
+        width:100px;
+    }
+    .review {
+        padding: 1rem;
+    }
+}
